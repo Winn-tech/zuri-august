@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(255, 253, 245);
+    font-family: sans-serif;
+}
+.section-1{
+    padding: 5%;
+    padding-left: 0%;
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.logo span{
+    color: red;
+    
+}
+
+.section-1 .sub-1 span{
+    color: red;
+
+}
+
+.section-1 .sub-1{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 6%;
+}
+.section-1 .sub-1 .para-2{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 28px;
+}
+.section-1 .sub-1>p{
+    font-weight: 550;
+    margin-bottom: 4%;
+    font-size: 2.2em;
+    text-transform: capitalize;
+    text-align: center;
+}
+.section-1 .sub-1 .btn-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 0% auto;
+    margin-top: 13%;
+}
+.section-1 .sub-1 .btn-section a{
+    border: 1px solid red;
+    font-size: 1.1em;
+    padding:15px 20px;
+    text-decoration: none;
+    color: azure;
+    background-color: red;
+    text-transform: capitalize;
+    font-size: 1.1em;
+}
+.section-1 .sub-1 .btn-section a:last-child{
+    color: red;
+    background-color: azure;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+.section-1 .sub-2{
+    width: 70%;
+    justify-content: center;
+    margin: 10% auto;
+    font-size: 2em;
+}
+.section-1 .sub-2 p:first-child{
+    color: red;
+    font-weight: bold;
+    font-size: 0.5em;
+    margin-bottom: 5%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.section-2 .row .col{
+    width: 32%;
+    background-color: pink;
+    box-sizing: border-box;
+    padding: 5% 3% ;
+}
+.section-2 .row .col div{
+    padding: 7% 0;
+    width: 60%;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 10%;
+    font-weight: 700;
+}
+.section-2 .row .col>p:last-child{
+    margin-top: 10%;
+    color: red;
+}
+.section-2 .row .col span{
+    color: red;
+}
+
+footer{
+    padding: 0 5%;
+}
+footer .col{
+    text-align: left;
+}
+
+footer a{
+    color: red;
+}

@@ -1,0 +1,206 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+body{
+    background-color: rgb(255, 253, 245);
+    font-family: poppins;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 4%;
+
+}
+.navbar .enrollNow{ 
+    display: flex;
+}
+.navbar .enrollNow p:first-child{
+    border: 8px solid  rgb(231, 51, 43);;
+    width: 40px;
+    border-radius: 50%;
+}
+.navbar .enrollNow p:last-child{
+    background-color:  rgb(231, 51, 43);;
+    width: 150px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: -8px;
+    height: 50px;
+    color: white;
+   
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0% 20px;
+}
+main{
+    padding: 0% 6%;
+   
+}
+.section-1{
+    width: 100%;
+    position: relative;
+}
+.section-1 .avatar{
+    display: flex;
+}
+.section-1 .avatar img{
+    width: 40%;
+    height: 100%;
+    mix-blend-mode: darken;
+}
+.section-1 .avatar .male{
+    width: 90%;
+    margin-right: -25%;
+}
+.section-1 .center{
+    position: absolute;
+    width: 47%;
+    margin: 0% auto;
+    top:10%;
+    left: 31%;
+} 
+.section-1 .center>p:first-child{
+    color:  rgb(231, 51, 43);;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+.section-1 .center .secondPara{
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+}
+.section-1 .center div{
+    text-align: center;
+    padding: 0% 12%;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+.section-1 .center .line{
+    width: 30%;
+    margin-left: 40%;
+    margin-bottom: 25px;
+}
+.section-2>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.section-2>div>div{
+    width: 30%;
+    text-align: center;
+}
+.section-2>div>div:first-child{
+    font-weight: 700;
+    font-size: 1.2em;
+    font-stretch: expanded;
+
+}
+.section-2>div>div:last-child{
+    text-align: right;
+    font-size: 1.2em;
+}
+.section-3>div{
+    display: flex;
+    justify-content: space-between;
+}
+.section-3>div>p:first-child{
+    font-weight: 600;
+    font-size: 1.5em;
+    width: 50%;
+}
+.section-3>div>p:first-child span{
+    font-size: 16px;
+    color:  rgb(231, 51, 43);;
+    margin-bottom: 100px;
+}
+.section-3 .star{
+    width: 50%;
+}
+.section-4 .row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-4 .row .col{
+    background-color: white ;
+    border-radius: 10%;
+    width: 32%;
+    margin: 3% 0;
+    position: relative;
+    padding: 30px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
+    box-shadow: 0 11px 22px rgb(231 51 43 / 10%);
+}
+.section-4 .row .col .num{
+    font-weight: 800;
+    /* margin-top: 10%; */
+    font-size: 3em;
+}
+.section-4 .row .col .title{
+    font-size: 1.9em;
+    font-weight: 400;
+    margin: 30px 0;
+}
+.section-4 .row .col p:last-child{
+    line-height: 25px;
+    font-size: 1.2em;
+
+}
+
+.section-4 .row .col img{
+    width: 20%;
+    height: 15%;
+    position: absolute;
+    right: 0%;
+    top: -10px;
+    mix-blend-mode: darken;
+}
+.section-4 .row .col:first-child{
+    background-color:  rgb(231, 51, 43);
+}
+.section-5{
+    background-color: rgb(231, 51, 43);
+}
+.section-5 .sec5-row{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:900px) {
+    .section-4 .row{
+        display: flex;
+    }
+    .section-4 .row .col{
+        width: 48%;
+        margin: 3% auto;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .navbar ul{
+        display: none;
+    }
+    .section-1 .avatar{
+        display: block;
+    }
+    .section-1 .avatar .male{
+       display: none;
+    }
+    .section-1 .center{
+        position: relative;
+        top: 0%;
+        right: 0%;
+        margin: 0% auto;
+    }
+
+}
