@@ -1,6 +1,8 @@
 *{
     padding: 0%;
     margin: 0%;
+    /* overflow-x: hidden;
+    overflow-y:auto; */
     
 }
 body{
@@ -11,6 +13,9 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 0% 4%;
+    /* position: fixed; */
+    height: 75px;
+    /* width: 100%; */
 
 }
 .navbar .enrollNow{ 
@@ -22,7 +27,7 @@ body{
     border-radius: 50%;
 }
 .navbar .enrollNow p:last-child{
-    background-color:  rgb(231, 51, 43);;
+    background-color:  rgb(231, 51, 43);
     width: 150px;
     border-radius: 20px;
     text-align: center;
@@ -39,16 +44,28 @@ body{
     list-style: none;
     margin: 0% 20px;
 }
-main{
+.main{
     padding: 0% 6%;
    
 }
 .section-1{
     width: 100%;
     position: relative;
+    margin: 3% 0;
 }
 .section-1 .avatar{
     display: flex;
+}
+.section-1 .enrollNoww{
+    background-color: rgb(231, 51, 43);
+    color: white;
+    width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0% auto;
+    border-radius: 30px;
+    width: fit-content
+ 
 }
 .section-1 .avatar img{
     width: 40%;
@@ -56,7 +73,7 @@ main{
     mix-blend-mode: darken;
 }
 .section-1 .avatar .male{
-    width: 90%;
+    width: 80%;
     margin-right: -25%;
 }
 .section-1 .center{
@@ -88,6 +105,9 @@ main{
     margin-left: 40%;
     margin-bottom: 25px;
 }
+.section-2, .section-3, .section-4{
+    margin: 3% 0;
+}
 .section-2>div{
     display: flex;
     justify-content: space-between;
@@ -110,10 +130,22 @@ main{
 .section-3>div{
     display: flex;
     justify-content: space-between;
+    /* overflow-y: hidden;
+    scroll-behavior: auto; */
+}
+
+section-3>div p:first-child{
+    width: 50%;
+}
+section-3>div img{
+    height: 90%;
+    margin: 0% auto;
+
 }
 .section-3>div>p:first-child{
-    font-weight: 600;
-    font-size: 1.5em;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 50px;
     width: 50%;
 }
 .section-3>div>p:first-child span{
@@ -170,18 +202,75 @@ main{
 }
 .section-5{
     background-color: rgb(231, 51, 43);
+    padding: 4% 5%;
 }
 .section-5 .sec5-row{
     display: flex;
     justify-content: space-between;
 }
+.section-5 .enroll{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: white;
+    color: rgb(231, 51, 43);
+    text-align: center;
+    width: fit-content;
+
+}
+
+@media screen and (max-width:1230px){
+    
+    .section-1 .center>p:first-child{
+        color:  rgb(231, 51, 43);;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+    
+
+}
+
 @media screen and (max-width:900px) {
     .section-4 .row{
-        display: flex;
+        display: block;
     }
     .section-4 .row .col{
-        width: 48%;
-        margin: 3% auto;
+        width: 100%;
+    }
+    .section-1 .center{
+        position: relative;
+        width: 47%;
+        margin: 0% auto;
+        top:0%;
+        left: 0%;
+        display: block;
+    } 
+    .section-1 .center>p:first-child{
+        color:  rgb(231, 51, 43);;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+    .section-1 .center .secondPara{
+        font-weight: 500;
+        font-size: 2em;
+        text-align: center;
+    }
+    .section-1 .center div{
+        text-align: center;
+        padding: 0% 12%;
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    .section-1 .avatar img{
+        width: 90%;
+        height: 90%;
+        mix-blend-mode: darken;
+    }
+    .section-1 .avatar .male{
+        width: 80%;
+        margin-right: -25%;
+        display: none;
     }
     
 }
@@ -202,5 +291,12 @@ main{
         right: 0%;
         margin: 0% auto;
     }
+    .section-4 .row{
+        display: block;
+    }
+    .section-4 .row .col{
+        width: 100%;
+    }
+    
 
 }
